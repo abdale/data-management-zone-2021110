@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "northeurope"
+            "value": "canadacentral"
         },
         "environment": {
             "value": "dev"
         },
         "prefix": {
-            "value": "dmz"
+            "value": "dmz1101"
         },
         "tags": {
             "value": {}
         },
         "purviewRootCollectionAdminObjectIds": {
-            "value": []
+            "value": ["4e888771-4e61-4ccb-8d88-1cc30e4d8221"]
         },
         "vnetAddressPrefix": {
             "value": "10.0.0.0/16"
