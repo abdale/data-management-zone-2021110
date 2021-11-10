@@ -15,8 +15,8 @@ on:
       - ".github/workflows/dataManagementZoneDeployment.yml"
 
 env:
-  AZURE_SUBSCRIPTION_ID: "17588eb2-2943-461a-ab3f-00a3ceac3112" # Update to '{dataHubSubscriptionId}'
-  AZURE_LOCATION: "northeurope"                                 # Update to '{regionName}'
+  AZURE_SUBSCRIPTION_ID: "34cfd0c2-9c91-46cd-9bc5-6baf71a718c2" # Update to '{dataHubSubscriptionId}'
+  AZURE_LOCATION: "canadacentral"                                 # Update to '{regionName}'
 
 jobs:
   validation:
@@ -56,7 +56,7 @@ jobs:
         id: data_management_zone_whatif
         uses: azure/CLI@v1
         with:
-          azcliversion: "2.29.2"
+          azcliversion: "2.30.0"
           inlineScript: |
             az account set \
               --subscription ${{ env.AZURE_SUBSCRIPTION_ID }}
